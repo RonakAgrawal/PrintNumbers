@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Print Numbers</title>
+	<script src="Print.js"></script>
+<link rel="shortcut icon" type="image/png" href="jasmine/lib/jasmine-3.2.0/jasmine_favicon.png">
+<link rel="stylesheet" type="text/css" href="jasmine/lib/jasmine-3.2.0/jasmine.css">
+
+<script src="jasmine/lib/jasmine-3.2.0/jasmine.js"></script>
+<script src="jasmine/lib/jasmine-3.2.0/jasmine-html.js"></script>
+<script src="jasmine/lib/jasmine-3.2.0/boot.js"></script>
+</head>
+<body>
+<form>
+  <h1>This Program prints the numbers</h1>
+  <ul>
+    <li>
+      For multiples of 3 write “Xpi” instead of the number
+    </li>
+    <li>
+      For multiples of 5 write “rit” instead of the number
+    </li>
+    <li>
+      For multiples of both write “Xpirit”
+    </li>
+  </ul>
+  <table>
+    <tr>
+      <td>Enter the first Number</td>
+      <td><input type="number" id="input1" value="100" min ="1" max="1000" required /></td>
+    </tr>
+    <tr>
+      <td>Enter the second Number</td>
+      <td><input type="number" id="input2" value="200" min ="1" max="1000" required /></td>
+    </tr>
+  </table>
+  <input type="submit" id="btnPrint" onclick="check()" />
+  <p id="result"> </p>
+</form>
+</body>
+</html>
